@@ -92,6 +92,81 @@ header {
     width: 349px;
 }
 
-
-
 /* fine sezione partner */
+
+/* sezione business */
+#dropbox-business .features-group {
+    border: 1px solid #6200ff;
+    min-width: 791px;
+    /* test */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 42px 0;
+}
+
+#dropbox-business .feature {
+    border: 1px solid #6200ff;
+    /* test */
+}
+
+#dropbox-business .feature img {
+    display: block;
+    width: 261px;
+}
+
+
+#dropbox-business .feature .text {
+    height: 206px;
+    border: 1px solid #6200ff;
+    /* test */
+}
+
+#dropbox-business .business-numbers {
+    border: 1px solid #6200ff;
+    height: 210px;
+    /* test */
+}
+
+/* fine sezione business */
+
+/* sezione Designit (quadrati) */
+#designit * {
+    border: 1px solid #D5001F;
+    /* test */
+
+}
+
+#designit .container-max {
+    display: flex;
+}
+
+#designit .container-max .big-square {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+}
+
+#designit .container-max .small-group {
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#designit .container-max .small-square {
+    width: calc(100% / 2);
+    height: calc(100vw / 6);
+}
+
+
+
+
+
+
+
+
+
+/* fine sezione Designit (quadrati) */
