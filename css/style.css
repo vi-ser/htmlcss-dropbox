@@ -601,9 +601,35 @@ oppure due percentuali
 
 /* sezione faq */
 #faq .container {
-    border: 1px solid #000000;
-    height: 725px;
-    /* test */
+    border: none;
+    padding: 160px 0;
+}
+
+#faq h2 {
+    margin-bottom: 60px;
+}
+
+#faq .question strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#faq .accordion .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 40px 0;
+    border-top: 2px solid #f3f3f3;
+}
+
+#faq .accordion .question:last-child {
+    border-bottom: 2px solid #f3f3f3;
+}
+
+
+#faq .accordion .question .chevron {
+    padding: 0px 40px;
 }
 
 /* fine sezione faq */
