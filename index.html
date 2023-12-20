@@ -72,11 +72,10 @@
                     <a class="btn" href="">Inizia la tua prova gratuita</a>
                     <p>Annulla in qualsiasi momento</p>
                     <i class="fa fa-arrow-down" aria-hidden="true"></i>
-
-
-
                 </div>
-                <img src="./img/jumbo.png" alt="jumbo">
+                <div class="right">
+                    <img src="./img/jumbo.png" alt="jumbo">
+                </div>
             </div>
         </div>
     </header>
@@ -85,11 +84,66 @@
     <!-- sezione tariffe -->
     <section id="plan">
         <div class="container mtop">
-            <div class="billing">
+            <h2>Trova il piano business che fa per te</h2>
 
+            <div class="billing">
+                <div class="monthly">
+                    <input type="radio" id="mensile" name="fatturazione" value="mensile" checked>
+                    <label for="mensile">Fatturazione mensile</label><br>
+                </div>
+
+                <div class="annual">
+                    <input type="radio" id="annuale" name="fatturazione" value="annuale">
+                    <label for="annuale">Fatturazione annuale</label><br>
+                </div>
             </div>
             <div id="vertical-price">
-                <div class="price column"></div>
+                <div class="price column">
+                    <div class="type">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <span>Singolo</span>
+                    </div>
+                    <div class="plan-choice">
+                        <h3>Professional</h3>
+                        <strong class="cost">€ 12,00</strong>
+                        <span class="cost-type">/mese</span>
+                        <div class="description">
+                            <div class="users">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                <span>1 utente</span>
+                            </div>
+                            <div class="space">
+                                <i class="fa fa-folder" aria-hidden="true"></i>
+                                <span>5 TB di spazio di archiviazione sicuro</span>
+                            </div>
+                            <div class="sharing">
+                                <i class="fa fa-share-alt" aria-hidden="true"></i>
+                                <span>Funzioni di produttività premium e condivisione file semplice e sicura</span>
+                            </div>
+                        </div>
+                        <div class="btn">Prova gratis per 30 giorni
+                        </div>
+                        <span class="cta">oppure <a href="">acquista ora</a></span>
+
+                        <hr>
+
+                        <strong class="highlights">Punti Salienti del piano</strong>
+
+                        <div class="features-group">
+                            <div class="feature">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+
+                                <span>Invia file fino a 100 GB con Dropbox Transfert</span>
+                            </div>
+
+                            <div class="feature">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+
+                                <span>Cartelle offline su dispositivi mobili</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="price column"></div>
                 <div class="price column"></div>
             </div>
