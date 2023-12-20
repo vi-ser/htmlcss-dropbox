@@ -492,8 +492,6 @@ oppure due percentuali
 
 }
 
-
-
 #designit .container-max .big-square hr {
     width: 108px;
     border: 1px solid #ECECED;
@@ -569,14 +567,34 @@ oppure due percentuali
 
 
 #cta {
-    border: 1px solid #D5001F;
-    /* test */
+    background-color: #B4D0E7;
 }
 
 #cta .container {
-    border: 1px solid #D5001F;
-    height: 360px;
-    /* test */
+
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 138px 0;
+}
+
+#cta h2 {
+    margin: 0;
+    color: #620528;
+}
+
+#cta .btn {
+
+    display: inline-block;
+
+    background-color: white;
+    color: black;
+
+    padding: 12px 52px;
+
+    font-weight: 300;
+    font-size: 14px;
 }
 
 /* fine sezione Designit (quadrati) */
