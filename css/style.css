@@ -171,14 +171,15 @@ header .fa-arrow-down {
 #plan #vertical-price {
     display: flex;
     justify-content: space-between;
+
+
     margin-bottom: 48px;
+
 }
 
 .price.column {
-    /* height: 954px; */
     /* border: 1px solid #D3D3D3; */
     /* test */
-
     width: calc(100% / 3 - 50px / 3 * 2);
 }
 
@@ -198,6 +199,7 @@ header .fa-arrow-down {
 .price.column .plan-choice {
     display: flex;
     flex-direction: column;
+    height: 100%;
 
     border: 1px solid #D3D3D3;
     border-top: 0;
@@ -228,7 +230,6 @@ header .fa-arrow-down {
     row-gap: 24px;
 
     margin-bottom: 48px;
-
 }
 
 .price.column .plan-choice .users {
@@ -278,8 +279,6 @@ header .fa-arrow-down {
     display: flex;
     flex-direction: column;
     row-gap: 24px;
-
-    margin-bottom: 24px;
 }
 
 .price.column .features-group .feature {
