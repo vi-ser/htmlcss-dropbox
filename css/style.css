@@ -636,9 +636,9 @@ oppure due percentuali
 
 /* footer */
 footer {
-    height: 570px;
+    /* height: 570px; */
     /* test */
-
+    color: white;
     background-color: black;
 }
 
@@ -651,26 +651,46 @@ footer .links {
 }
 
 footer .links .row {
-    border: 1px solid white;
-    height: 228px;
+    /* height: 228px; */
     /* test */
 
     flex-grow: 1;
 }
 
+footer h3 {
+    margin-bottom: 32px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+
+    font-size: 14px;
+    font-weight: 300;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer a {
+    color: white;
+}
+
 footer hr {
-    border: 2px solid white;
+    border: 1px solid #949494;
     width: 120px;
 }
 
 footer .language {
-    border: 1px solid white;
-    width: 96px;
-    height: 18px;
     /* test */
 
     padding: 60px 0;
 
+    font-size: 14px;
+    font-weight: 300;
+    color: #949494;
 }
 
 /* fine footer */
