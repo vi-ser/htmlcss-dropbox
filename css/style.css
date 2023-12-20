@@ -6,6 +6,17 @@
 
 /* commons */
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn {
+    padding: 10px 16px;
+    color: white;
+    background-color: #0061FF;
+    font-weight: 300;
+}
+
 .container {
     border: 1px solid #058eff;
     /* test */
@@ -30,10 +41,39 @@
 
 /* navbar */
 nav {
-    height: 80px;
-    border: 1px solid #0061FF;
+    /* border: 1px solid #0061FF; */
     /* test */
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 26px 20px;
+
 }
+
+nav .left,
+nav .right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+
 
 /* header */
 header {
@@ -51,9 +91,9 @@ header .container-big {
 
 /* sezione tariffe */
 
-#plan .container {
+/* #plan .container {
     min-width: calc(300px * 3 + 32px);
-}
+} */
 
 #plan .container .billing {
     border: 1px solid #D3D3D3;
@@ -74,7 +114,7 @@ header .container-big {
     border: 1px solid #D3D3D3;
     /* test */
 
-    width: 300px;
+    width: calc(100% / 3 - 50px / 3 * 2);
 }
 
 .price.row {
@@ -90,6 +130,11 @@ header .container-big {
     display: flex;
     gap: 48px;
 }
+
+/* 
+o dimensione fissa + flex grow
+oppure due percentuali
+ */
 
 #partner .container .column-big {
 
