@@ -154,6 +154,11 @@ header .fa-arrow-down {
     font-size: 14px;
 }
 
+
+#plan .container {
+    border: none;
+}
+
 #plan .container .billing {
     /* border: 1px solid #D3D3D3; */
     /* test */
@@ -189,7 +194,7 @@ header .fa-arrow-down {
     align-items: center;
     gap: 4px;
 
-    border: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
 
     font-weight: 300;
     padding: 12px;
@@ -197,8 +202,8 @@ header .fa-arrow-down {
 }
 
 .price.column .plan-choice {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     /* height: 100%; */
 
     /* border: 1px solid #D3D3D3; */
@@ -207,11 +212,11 @@ header .fa-arrow-down {
     padding: 32px;
 }
 
-.price.column .plan-choice h3 {
+.price .plan-choice h3 {
     margin-bottom: 24px;
 }
 
-.price.column .plan-choice .cost {
+.price .plan-choice .cost {
     margin-bottom: 20px;
 }
 
@@ -294,9 +299,56 @@ header .fa-arrow-down {
 }
 
 .price.row {
-    height: 216px;
-    border: 1px solid #D3D3D3;
+    /* height: 216px; */
     /* test */
+
+    border-bottom: 1px solid #D3D3D3;
+}
+
+.price.row span,
+.price.row .btn,
+.price.row strong {
+
+    font-size: 14px;
+}
+
+.price.row .type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    border: 1px solid #D3D3D3;
+
+    font-weight: 300;
+    padding: 12px;
+}
+
+.price.row .plan-choice {
+    display: flex;
+    gap: 80px;
+
+    padding: 32px;
+
+    border: 1px solid #D3D3D3;
+    border-top: 0;
+}
+
+
+
+.price.row .btn {
+    text-align: center;
+
+
+    width: 233.33px;
+}
+
+.price.row .plan-choice strong {
+    display: block;
+}
+
+.price.row .plan-choice span {
+    font-weight: 300;
 }
 
 /* fine sezione tariffe */
