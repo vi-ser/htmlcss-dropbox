@@ -570,28 +570,102 @@ oppure due percentuali
     margin-bottom: 60px;
 }
 
-#faq .question strong {
+#faq strong {
     font-size: 14px;
     font-weight: 700;
 }
 
-#faq .accordion .question {
+summary {
+
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    padding: 40px 0;
-    border-top: 2px solid #f3f3f3;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 40px 0px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #b1b1b1;
 }
 
-#faq .accordion .question:last-child {
-    border-bottom: 2px solid #f3f3f3;
+
+details p {
+    padding: 40px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: white;
+}
+
+details:last-of-type {
+    border-bottom: 1px solid #b1b1b1;
 }
 
 
-#faq .accordion .question .chevron {
-    padding: 0px 40px;
+
+details[open] summary~* {
+    animation: open 0.4s ease;
 }
+
+@keyframes open {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+details i {
+    transition: .4s ease;
+}
+
+details[open] i {
+    transform: rotate(180deg);
+}
+
+
+
+/* .accordion {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    padding: 40px 0px;
+    width: 100%;
+    text-align: left;
+    border-top: 1px solid #b1b1b1;
+    border-bottom: 1px solid #b1b1b1;
+    border-left: none;
+    border-right: none;
+
+    transition: 0.4s ease;
+}
+
+.accordion:not(:first-of-type) {
+    margin-top: -1px;
+}
+
+.panel {
+    padding: 40px 0px;
+    font-size: 14px;
+    font-weight: 300;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+
+    opacity: 0;
+}
+
+
+.accordion:hover .panel {
+    display: block;
+}
+
+.accordion .fa-chevron-down {
+    padding: 0 40px;
+} */
 
 /* fine sezione faq */
 
