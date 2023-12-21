@@ -508,8 +508,8 @@ oppure due percentuali
 }
 
 #designit .container-max .small-square {
-    width: calc(100% / 2);
-    height: calc(100vw / 6);
+    width: 50%;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
