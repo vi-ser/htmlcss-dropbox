@@ -97,6 +97,10 @@ nav a {
     font-weight: 300;
 }
 
+nav .btn:hover {
+    background-color: #0049bd;
+}
+
 /* header */
 header {
     background-color: #B4D0E7;
@@ -134,6 +138,11 @@ header img {
 header .btn {
     display: inline;
 }
+
+header .btn:hover {
+    background-color: #0049bd;
+}
+
 
 header .fa-arrow-down {
     padding-top: 40px;
@@ -302,6 +311,10 @@ header .fa-arrow-down {
     margin-bottom: 36px;
 }
 
+.price .btn:hover {
+    background-color: #0049bd;
+}
+
 .price.column a {
     color: #8149F5;
     text-decoration: underline;
@@ -439,6 +452,11 @@ oppure due percentuali
     font-weight: 300;
     font-size: 14px;
 }
+
+#partner .container .column-small .btn:hover {
+    background-color: rgb(238, 238, 238);
+}
+
 
 
 /* fine sezione partner */
@@ -596,6 +614,10 @@ oppure due percentuali
 
     font-weight: 300;
     font-size: 14px;
+}
+
+#cta .btn:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 /* fine sezione Designit (quadrati) */
