@@ -86,17 +86,16 @@
         <div class="container mtop">
             <h2>Trova il piano business che fa per te</h2>
 
-            <div class="billing">
-                <div class="monthly">
-                    <input type="radio" id="mensile" name="fatturazione" value="mensile" checked>
-                    <label for="mensile">Fatturazione mensile</label><br>
-                </div>
-
-                <div class="annual">
+            <form class="billing">
+                <label class="custom-radio">Fatturazione mensile
+                    <input type="radio" id="mensile" name="fatturazione" value="mensile">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="custom-radio">Fatturazione annuale
                     <input type="radio" id="annuale" name="fatturazione" value="annuale">
-                    <label for="annuale">Fatturazione annuale</label><br>
-                </div>
-            </div>
+                    <span class="checkmark"></span>
+                </label>
+            </form>
             <div id="vertical-price">
                 <div class="price column">
                     <div class="type">

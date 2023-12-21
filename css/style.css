@@ -140,10 +140,7 @@ header .fa-arrow-down {
     font-size: 40px;
 }
 
-
-
 /* fine header */
-
 
 /* sezione tariffe */
 
@@ -159,10 +156,56 @@ header .fa-arrow-down {
     border: none;
 }
 
-#plan .container .billing {
-    /* border: 1px solid #D3D3D3; */
-    /* test */
+.custom-radio {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 32px;
+    padding-top: 2px;
+    cursor: pointer;
+}
 
+.custom-radio input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #ffffff;
+    border: 2px solid #DFDFE2;
+    border-radius: 50%;
+}
+
+.custom-radio input:checked+.checkmark {
+    background-color: #0061FF;
+    border: 2px solid #0061FF;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+
+    height: 12px;
+
+    border-radius: 50%;
+    background: white;
+}
+
+.custom-radio input:checked+.checkmark:after {
+    display: block;
+}
+
+#plan .container .billing {
     display: flex;
     align-items: center;
     gap: 48px;
@@ -170,7 +213,6 @@ header .fa-arrow-down {
     font-weight: 300;
 
     margin-bottom: 48px;
-
 }
 
 #plan #vertical-price {
@@ -204,9 +246,7 @@ header .fa-arrow-down {
 .price.column .plan-choice {
     display: flex;
     flex-direction: column;
-    /* height: 100%; */
 
-    /* border: 1px solid #D3D3D3; */
     border-top: 0;
 
     padding: 32px;
@@ -623,49 +663,6 @@ details i {
 details[open] i {
     transform: rotate(180deg);
 }
-
-
-
-/* .accordion {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    color: black;
-    cursor: pointer;
-    padding: 40px 0px;
-    width: 100%;
-    text-align: left;
-    border-top: 1px solid #b1b1b1;
-    border-bottom: 1px solid #b1b1b1;
-    border-left: none;
-    border-right: none;
-
-    transition: 0.4s ease;
-}
-
-.accordion:not(:first-of-type) {
-    margin-top: -1px;
-}
-
-.panel {
-    padding: 40px 0px;
-    font-size: 14px;
-    font-weight: 300;
-    background-color: white;
-    display: none;
-    overflow: hidden;
-
-    opacity: 0;
-}
-
-
-.accordion:hover .panel {
-    display: block;
-}
-
-.accordion .fa-chevron-down {
-    padding: 0 40px;
-} */
 
 /* fine sezione faq */
 
