@@ -84,7 +84,6 @@ nav .right {
 
 }
 
-
 nav ul {
     display: flex;
     flex-direction: row;
@@ -95,6 +94,10 @@ nav ul {
 nav a {
     color: black;
     font-weight: 300;
+}
+
+nav a:not(.btn):hover {
+    border-bottom: 4px solid #0062ff65;
 }
 
 nav .btn:hover {
